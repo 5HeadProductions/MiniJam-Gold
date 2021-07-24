@@ -5,8 +5,13 @@ using TMPro;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
-    private float timerVal = 60;
+    private float timerVal = 15;
     public TextMeshProUGUI text;
+    private AudioManager instance;
+    bool ten = false;
+    void Start(){
+        instance = GameObject.Find("AudioManager").GetComponent<AudioManager>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -20,7 +25,6 @@ public class Timer : MonoBehaviour
     }
 
     public void UpdateCounter(float seconds){
-              
         switch(seconds){
             case 0: text.fontSize = 180;         
                     text.text = seconds.ToString("0");
@@ -49,12 +53,24 @@ public class Timer : MonoBehaviour
             case 8: text.fontSize = 80;
                     text.text = seconds.ToString("0");
                 break;
-            case 9: text.fontSize = 70;
+            case 9: 
+                    if(ten == true){
+                    text.fontSize = 70;
                     text.text = seconds.ToString("0");
+                    instance.Play("9");
+                    }
+                    ten = false;
                 break;
-            case 10: text.fontSize = 60;
+            case 10:
+                    if(ten == false){
+                        Debug.Log("PAN");
+                    text.fontSize = 60;
                     text.color = Color.red;
                     text.text = seconds.ToString("0");
+                    instance.Play("10");
+                    }
+                    ten = true;
+                    
                 break;
             default : 
                     text.fontSize = 50;
