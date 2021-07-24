@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         
         if(Input.GetKey(KeyCode.A)){
             _rightJoint.enabled = true;
-            var impulse = (20 * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
+            var impulse = (3 * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
 
         player.GetComponent<Rigidbody2D>().AddTorque(impulse, ForceMode2D.Impulse);
             
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
         
         if(Input.GetKey(KeyCode.D)){
             _leftJoint.enabled = true;
-            var impulse = -(20 * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
+            var impulse = -(3 * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
 
         player.GetComponent<Rigidbody2D>().AddTorque(impulse, ForceMode2D.Impulse);
             
