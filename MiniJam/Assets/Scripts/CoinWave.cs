@@ -7,7 +7,7 @@ public class CoinWave : MonoBehaviour
     public float riseRate;
     Vector2 offset;
 
-    private float _currentY;
+    public GameObject deathCanvas;
 
     // Update is called once per frame
     void Update()
@@ -16,8 +16,13 @@ public class CoinWave : MonoBehaviour
 
         
 
-        transform.position += new Vector3(transform.position.x, transform.position.y + riseRate, transform.position.z) * Time.deltaTime;
+        transform.position += new Vector3(transform.position.x, riseRate, transform.position.z) * Time.deltaTime;
 
        
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+        Destroy(other.gameObject);
+        deathCanvas.SetActive(true);
     }
 }
