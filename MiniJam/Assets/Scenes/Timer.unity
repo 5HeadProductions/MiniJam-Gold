@@ -166,10 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7d056f782e73974bb204558f920ba3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pools:
-  - tag: falling
-    prefab: {fileID: 9211376595691786911, guid: 652a5139560ae504486dbe3b5055d060, type: 3}
-    size: 10
+  pooledObject: {fileID: 9211376595691786911, guid: 652a5139560ae504486dbe3b5055d060, type: 3}
+  size: 7
 --- !u!1 &647652764
 GameObject:
   m_ObjectHideFlags: 0

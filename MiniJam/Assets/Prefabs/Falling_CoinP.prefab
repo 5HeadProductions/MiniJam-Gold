@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2370221521235481539}
   - component: {fileID: -7825320107713319404}
   - component: {fileID: -279786652248041614}
+  - component: {fileID: 6010880704230088154}
   m_Layer: 0
   m_Name: Falling_CoinP
   m_TagString: falling
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d8f24ba85f6bba0429b66b108e93e08d, type: 3}
-  m_Color: {r: 0.735849, g: 0.53935385, b: 0.08677464, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.56078434}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -117,5 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579cccd312c38a048ad19892ef38faa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sideForce: 0.1
-  spawner: {fileID: 0}
+--- !u!58 &6010880704230088154
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211376595691786911}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32000002
