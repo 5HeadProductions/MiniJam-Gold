@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     private float timerVal = 60;
     public TextMeshProUGUI text;
-
     // Update is called once per frame
     void Update()
     {
@@ -59,6 +59,7 @@ public class Timer : MonoBehaviour
             default : 
                     text.fontSize = 50;
                     text.text = seconds.ToString("0");
+                    
                 break;
         }
     }
