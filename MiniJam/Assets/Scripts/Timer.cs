@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     private float timerVal = 60;
     public TextMeshProUGUI text;
     private AudioManager instance;
+    public GameObject diedCanvas;
     bool ten = false;
     void Start(){
         instance = GameObject.Find("AudioManager").GetComponent<AudioManager>();
@@ -15,13 +16,13 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!diedCanvas.activeInHierarchy){
         if(timerVal > 0)timerVal -= Time.deltaTime;
         else timerVal = 0;
         if(timerVal < 0) timerVal = 0;
-
-//float minutes = Mathf.FloorToInt(timerVal/60);
         float seconds = Mathf.FloorToInt(timerVal % 60);  
-        UpdateCounter(seconds);      
+        UpdateCounter(seconds);    
+        }  
     }
 
     public void UpdateCounter(float seconds){
