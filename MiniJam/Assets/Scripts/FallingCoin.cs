@@ -11,7 +11,7 @@ public class FallingCoin : MonoBehaviour
     }
     public void OnEnable()
     {
-        Invoke("Disable", 2f);
+        Invoke("Disable", 6f);
     }
 
     public void Disable()
