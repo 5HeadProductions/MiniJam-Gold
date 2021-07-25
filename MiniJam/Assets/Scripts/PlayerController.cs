@@ -16,6 +16,13 @@ public class PlayerController : MonoBehaviour
     private float _coinHitTimer = 0;
     public float handTimeOut;
 
+    public Sprite leftHand;
+    public Sprite rightHand;
+
+    public Sprite leftHandGrab;
+
+    public Sprite rightHandGrab;
+
     
     void Start(){
         _leftJoint = leftAnchor.GetComponent<HingeJoint2D>();
@@ -26,24 +33,30 @@ public class PlayerController : MonoBehaviour
     {
         _coinHitTimer -= Time.deltaTime;
         if(Input.GetKey(KeyCode.A) && _coinHitTimer <= 0){
+            rightAnchor.GetComponent<SpriteRenderer>().sprite = rightHandGrab;
             _rightJoint.enabled = true;
             var impulse = (rotationSpeed * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
 
         player.GetComponent<Rigidbody2D>().AddTorque(impulse, ForceMode2D.Impulse);
             
         }
-        if(Input.GetKeyUp(KeyCode.A))
+        if(Input.GetKeyUp(KeyCode.A)){
+            rightAnchor.GetComponent<SpriteRenderer>().sprite = rightHand;
         _rightJoint.enabled = false;
+        }
         
         if(Input.GetKey(KeyCode.D) && _coinHitTimer <= 0){
+            leftAnchor.GetComponent<SpriteRenderer>().sprite = leftHandGrab;
             _leftJoint.enabled = true;
             var impulse = -(rotationSpeed * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
 
         player.GetComponent<Rigidbody2D>().AddTorque(impulse, ForceMode2D.Impulse);
             
         }
-        if(Input.GetKeyUp(KeyCode.D))
+        if(Input.GetKeyUp(KeyCode.D)){
+            leftAnchor.GetComponent<SpriteRenderer>().sprite = leftHand;
         _leftJoint.enabled = false;
+        }
     }
 
     public void handRelease(){
