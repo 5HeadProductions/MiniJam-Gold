@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class PlayerController : MonoBehaviour
 {
-   
+   public MMFeedbacks hitFeedback;
     public GameObject player;
     public GameObject rightAnchor;
     public GameObject leftAnchor;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(player != null){
         _coinHitTimer -= Time.deltaTime;
         if(Input.GetKey(KeyCode.A) && _coinHitTimer <= 0){
             rightAnchor.GetComponent<SpriteRenderer>().sprite = rightHandGrab;
@@ -57,6 +59,7 @@ public class PlayerController : MonoBehaviour
             leftAnchor.GetComponent<SpriteRenderer>().sprite = leftHand;
         _leftJoint.enabled = false;
         }
+        }
     }
 
     public void handRelease(){
@@ -66,6 +69,9 @@ public class PlayerController : MonoBehaviour
         _rightJoint.enabled = false;
        
         _coinHitTimer = handTimeOut;
+
+        
+        hitFeedback?.PlayFeedbacks();
 
     }
 
