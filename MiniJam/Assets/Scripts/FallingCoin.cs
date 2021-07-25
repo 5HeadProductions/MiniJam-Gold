@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FallingCoin : MonoBehaviour
 {
     public PlayerController pc;
     
     void Start(){
-        pc = GameObject.Find("Player1").GetComponent<PlayerController>();
+        if(SceneManager.GetActiveScene().name == "PlayScene")
+        {
+            pc = GameObject.Find("Player1").GetComponent<PlayerController>();
+        }
     }
     public void OnEnable()
     {
