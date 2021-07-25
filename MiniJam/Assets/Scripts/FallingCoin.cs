@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class FallingCoin : MonoBehaviour
 {
+    public PlayerController pc;
+    
+    void Start(){
+        pc = GameObject.Find("Player1").GetComponent<PlayerController>();
+    }
     public void OnEnable()
     {
         Invoke("Disable", 2f);
@@ -19,7 +24,9 @@ public class FallingCoin : MonoBehaviour
         CancelInvoke();
     }
     public void OnCollisionEnter2D(Collision2D col){
-        if(col.gameObject.tag == "Player") Debug.Log("hit");
+        if(col.gameObject.tag == "Player"){
+        pc.handRelease();
+        }
     }
     
 }
