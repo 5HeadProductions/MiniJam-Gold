@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
-    private float timerVal = 61;
+    private float timerVal = 60;
     public TextMeshProUGUI text;
     private AudioManager instance;
     bool ten = false;
