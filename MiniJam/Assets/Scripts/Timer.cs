@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
-    private float timerVal = 15;
+    private float timerVal = 60;
     public TextMeshProUGUI text;
     private AudioManager instance;
     bool ten = false;
@@ -26,32 +26,77 @@ public class Timer : MonoBehaviour
 
     public void UpdateCounter(float seconds){
         switch(seconds){
-            case 0: text.fontSize = 180;         
+            case 0:
+                    if(ten == false){
+                    text.fontSize = 160;         
                     text.text = seconds.ToString("0");
+                    instance.Play("0");
+                    }
+                    ten = true;
                 break;
-            case 1: text.fontSize = 160;
+            case 1: 
+                    if(ten == true){
+                    text.fontSize = 160;
                     text.text = seconds.ToString("0");
+                    instance.Play("1");
+                    }
+                    ten = false;
                 break;
-            case 2: text.fontSize = 150;
+            case 2: 
+                    if(ten == false){
+                    text.fontSize = 150;
                     text.text = seconds.ToString("0");
+                    instance.Play("2");
+                    }
+                    ten = true;
                 break;
-            case 3: text.fontSize = 140;
+            case 3:
+                    if(ten == true){
                     text.text = seconds.ToString("0");
+                    instance.Play("3");
+                    text.fontSize = 140;
+                    }
+                    ten = false;
                 break;
-            case 4: text.fontSize = 130;
+            case 4: 
+                    if(ten == false){
+                    text.fontSize = 130;
                     text.text = seconds.ToString("0");
+                    instance.Play("4");
+                    }
+                    ten = true;
                 break;
-            case 5: text.fontSize = 110;
+            case 5: 
+                    if(ten == true){
+                    text.fontSize = 110;
                     text.text = seconds.ToString("0");
+                    instance.Play("5");
+                    }
+                    ten = false;
                 break;
-            case 6: text.fontSize = 100;
+            case 6:
+                    if(ten == false){
+                    text.fontSize = 100;
                     text.text = seconds.ToString("0");
+                    instance.Play("6");
+                    }
+                    ten = true;
                 break;
-            case 7: text.fontSize = 90;
+            case 7: 
+                    if(ten == true){
+                    text.fontSize = 90;
                     text.text = seconds.ToString("0");
+                    instance.Play("7");
+                    }
+                    ten = false;
                 break;
-            case 8: text.fontSize = 80;
+            case 8: 
+                    if(ten == false){
+                    text.fontSize = 80;
                     text.text = seconds.ToString("0");
+                    instance.Play("8");
+                    }
+                    ten = true;
                 break;
             case 9: 
                     if(ten == true){
@@ -63,7 +108,6 @@ public class Timer : MonoBehaviour
                 break;
             case 10:
                     if(ten == false){
-                        Debug.Log("PAN");
                     text.fontSize = 60;
                     text.color = Color.red;
                     text.text = seconds.ToString("0");

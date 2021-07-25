@@ -581,9 +581,63 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: 9
-    clip: {fileID: 8300000, guid: e660cb65d59d7bf45afd22e1c6e430db, type: 3}
+    clip: {fileID: 8300000, guid: 7c95bebfad47a2f4f8fd8252ff1aa7e9, type: 3}
     volume: 1
-    pitch: 1.293
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 8
+    clip: {fileID: 8300000, guid: 0f2a72e6fd00410439948955b80709e7, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 7
+    clip: {fileID: 8300000, guid: 5c96ef56633080e4f89fd697450fc011, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 6
+    clip: {fileID: 8300000, guid: 20288bafd79a8dd48924559d9412c3fa, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 5
+    clip: {fileID: 8300000, guid: ab216427e10d967449fda94c10a93009, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 4
+    clip: {fileID: 8300000, guid: 0de9f9862e5cae447b63433aba1c8dc0, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 3
+    clip: {fileID: 8300000, guid: 60e19ccc76e50944f86c0829a9fe46f0, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 2
+    clip: {fileID: 8300000, guid: 30c4a88497fcf6c4d9b1c9d11745d46f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 1
+    clip: {fileID: 8300000, guid: d7ecf70a72515f041b480dbfd14552a8, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 0
+    clip: {fileID: 8300000, guid: f84b92cdaff4bde4fbf9582afe894842, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
     loop: 0
 --- !u!4 &1319038840
