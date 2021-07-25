@@ -16,6 +16,7 @@ public class FallingCoin : MonoBehaviour
 
     public void Disable()
     {
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Coin Hit");
         gameObject.SetActive(false);
     }
 
