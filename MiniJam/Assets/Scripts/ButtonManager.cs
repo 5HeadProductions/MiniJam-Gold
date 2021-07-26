@@ -27,18 +27,20 @@ public class ButtonManager : MonoBehaviour
     }
 
     public void MainMenu(){
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Click");
         SceneManager.LoadScene("MainMenu");
     }
 
     public void Play(){
         text.SetActive(false);
-      //
+      GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Click");
         StartCoroutine(LoadPlayScene());
 
 
     }
 
     public void Replay(){
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Click");
         SceneManager.LoadScene("PlayScene");
 
     }
