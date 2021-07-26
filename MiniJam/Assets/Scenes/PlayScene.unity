@@ -1338,8 +1338,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
-  m_sharedMaterial: {fileID: -5367612319295196728, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
+  m_sharedMaterial: {fileID: -5367612319295196728, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1886,8 +1886,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210948251}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13999993, y: 4.17, z: -10}
+  m_LocalRotation: {x: -1e-45, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0454, y: 3.8746, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1053851716}
@@ -2199,8 +2199,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
-  m_sharedMaterial: {fileID: -5367612319295196728, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
+  m_sharedMaterial: {fileID: -5367612319295196728, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5249,7 +5249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.47058824, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6462,7 +6462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.47058824, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6546,8 +6546,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
-  m_sharedMaterial: {fileID: -5367612319295196728, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
+  m_sharedMaterial: {fileID: -5367612319295196728, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9865,8 +9865,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Replay
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
-  m_sharedMaterial: {fileID: -5367612319295196728, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
+  m_sharedMaterial: {fileID: -5367612319295196728, guid: 69c9043dd3b5ae2479671431a68b4852, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10048,7 +10048,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030656994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -10080,6 +10080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riseRate: 0.8
+  camera: {fileID: 0}
   deathCanvas: {fileID: 2123664045}
 --- !u!212 &1030656997
 SpriteRenderer:
@@ -10286,6 +10287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 405485840}
+  camera: {fileID: 210948251}
 --- !u!61 &1049440846
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11549,7 +11551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pooledObject: {fileID: 9211376595691786911, guid: 652a5139560ae504486dbe3b5055d060, type: 3}
-  size: 20
+  size: 14
 --- !u!4 &1157803526
 Transform:
   m_ObjectHideFlags: 0
@@ -12233,7 +12235,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1238786640}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: Replay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12256,7 +12258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.47058824, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12820,7 +12822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You were Burried
+  m_text: You were Buried
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
   m_sharedMaterial: {fileID: -5367612319295196728, guid: df9410fdf3bd642479bbdefb9eb09d0c, type: 2}
@@ -14183,8 +14185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95, y: -73}
-  m_SizeDelta: {x: 15.2504, y: 15.25}
+  m_AnchoredPosition: {x: 88.7, y: -79.28845}
+  m_SizeDelta: {x: 8.2996, y: 13.3808}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512004982
 MonoBehaviour:
@@ -15893,6 +15895,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: c58dfffbccbc50745b7a6fd41f78e4ca, type: 3}
     - target: {fileID: 4563285385890601421, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563285385890601421, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
       propertyPath: rightHand
       value: 
       objectReference: {fileID: 21300000, guid: 0c767b060188a36428ceecde0189ef2d, type: 3}
@@ -15926,7 +15932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4563285385890601423, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.09
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4563285385890601423, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15959,6 +15965,26 @@ PrefabInstance:
     - target: {fileID: 4563285385890601423, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563285387323833130, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2954588
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563285387323833130, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2954588
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563285387323833130, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2954588
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563285387323833130, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0354
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563285387323833130, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.1746
       objectReference: {fileID: 0}
     - target: {fileID: 4563285387323833142, guid: c31bfad93daba574c86a1c81e8735838, type: 3}
       propertyPath: m_TagString
@@ -17228,7 +17254,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1878361170}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: Replay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17251,7 +17277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7647059, g: 0.47058824, b: 0.6784314, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18075,7 +18101,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986561546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -18107,6 +18133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riseRate: 0.8
+  camera: {fileID: 0}
   deathCanvas: {fileID: 2123664045}
 --- !u!212 &1986561549
 SpriteRenderer:
@@ -19672,6 +19699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riseRate: 0.8
+  camera: {fileID: 210948251}
   deathCanvas: {fileID: 2123664045}
 --- !u!212 &2118190888
 SpriteRenderer:
@@ -19777,7 +19805,7 @@ GameObject:
   - component: {fileID: 2123664047}
   - component: {fileID: 2123664046}
   m_Layer: 5
-  m_Name: TempDeathCanvas
+  m_Name: DeathCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

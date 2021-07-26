@@ -14,13 +14,15 @@ public class FallingCoin : MonoBehaviour
     }
     public void OnEnable()
     {
-        Invoke("Disable", 6f);
+        Invoke("Disable", 4f);
     }
 
     public void Disable()
     {
+        if(pc != null){
         GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Coin Hit");
         gameObject.SetActive(false);
+        }
     }
 
     public void OnDisable()
