@@ -9,8 +9,8 @@ public class WinCanvas : MonoBehaviour
     public GameObject camera;
     public void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "Player"){
-        winCanvas.SetActive(true);
-        camera.GetComponent<AudioListener>().enabled = false;
+            winCanvas.SetActive(true);
+        //camera.GetComponent<AudioListener>().enabled = false;
         
         }
     }

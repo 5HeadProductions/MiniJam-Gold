@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.A) && _coinHitTimer <= 0){
             rightAnchor.GetComponent<SpriteRenderer>().sprite = rightHandGrab;
             _rightJoint.enabled = true;
-            var impulse = (rotationSpeed * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
+            var impulse = (rotationSpeed * 1.1f * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
 
         player.GetComponent<Rigidbody2D>().AddTorque(impulse, ForceMode2D.Impulse);
             
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.D) && _coinHitTimer <= 0){
             leftAnchor.GetComponent<SpriteRenderer>().sprite = leftHandGrab;
             _leftJoint.enabled = true;
-            var impulse = -(rotationSpeed * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
+            var impulse = -(rotationSpeed * 1.10f * Mathf.Deg2Rad) * player.GetComponent<Rigidbody2D>().inertia;
 
         player.GetComponent<Rigidbody2D>().AddTorque(impulse, ForceMode2D.Impulse);
             

@@ -7,7 +7,7 @@ public class FallingSpawner : MonoBehaviour
     public GameObject fallingPrefab;
     
     private float timeToFall = 0;
-    private float spawnRate = .3f;
+    private float spawnRate = 1.5f;
 
     void Update()
     {

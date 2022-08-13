@@ -988,6 +988,12 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+  - name: Click
+    clip: {fileID: 8300000, guid: 568cb144bda20e8438dd4dba3cbeb5dd, type: 3}
+    volume: 0.539
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
 --- !u!4 &1556202627
 Transform:
   m_ObjectHideFlags: 0
